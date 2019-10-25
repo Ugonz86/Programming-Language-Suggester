@@ -20,6 +20,7 @@ button {
   color: white;
   font-size: 20px;
   text-shadow: white 1px 1px 3px;
+  border-radius: 10px;
 }
 
 #result {
@@ -48,9 +49,6 @@ button {
 
 }
 
-#question3 {
-  /* margin-bottom: 20px; */
-}
 body {
 background: #0091FF;
 background: -moz-linear-gradient(left, #0091FF 0%, #0236B3 46%, #000963 100%);
