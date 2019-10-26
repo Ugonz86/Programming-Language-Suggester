@@ -3,8 +3,8 @@ var which = $("input:radio[name=question1]:checked").val();
 $(document).ready(function() {
 
   $("#intro").click(function() {
-  $("#intro").hide();
-  $("#userForm").show();
+  $("#intro").hide("fadeOut");
+  $("#userForm").show("fadeIn");
   });
 
   $("form#userForm").submit(function(event) {
@@ -94,21 +94,21 @@ $(document).ready(function() {
     }
 
     $("#lang").text($("#nameInput").val() + "!" + " " + result);
-    $("#result").show();
-    $("#userForm").hide();
+    $("#result").show("fadeOut");
+    $("#userForm").hide("fadeIn");
 
   });
 
   $("#nameBtn").click(function() {
-    $("#userName").hide();
-    $("#question1").show();
+    $("#userName").hide("fadeOut");
+    $("#question1").show("fadeIn");
   });
   $("#q1Btn").click(function() {
-    $("#question1").hide();
-    $("#question2").show();
+    $("#question1").hide("fadeOut");
+    $("#question2").show("fadeIn");
   });
   $("#q2Btn").click(function() {
-    $("#question2").hide();
-    $("#question3").show();
+    $("#question2").hide("fadeOut");
+    $("#question3").show("fadeIn");
   });
 });
