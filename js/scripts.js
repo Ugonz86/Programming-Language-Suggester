@@ -1,8 +1,15 @@
 var which = $("input:radio[name=question1]:checked").val();
 
 $(document).ready(function() {
+
+  $("#intro").click(function() {
+  $("#intro").hide();
+  $("#userForm").show();
+  });
+
   $("form#userForm").submit(function(event) {
     event.preventDefault();
+
     var why = $("input:radio[name=question1]:checked").val();
     var what = $("input:radio[name=question2]:checked").val();
     var which = $("input:radio[name=question3]:checked").val();
@@ -86,44 +93,22 @@ $(document).ready(function() {
       result = "R and Python are are the best languages to start in the analysis and big data areas.";
     }
 
-
-    //
-    // if (why === "skill" && what === "create" && which === "manager") {
-    //   result = "Java, Python, Ruby and/or PHP are the most used web languages at a corporate level";
-    // }
-    // if (why === "skill" && what === "create" && which === "developer") {
-    //   result = "HTML5 for web development and Swift, Java and C# for web development";
-    // }
-    // if (why === "skill" && what === "create" && which === "scientist") {
-    //   result = "Java";
-    // }
-    //
-    //
-    // if (why === "fun" && what === "create" && which === "manager") {
-    //   result = "Javascript, Python and Ruby;
-    // }
-    // if (why === "fun" && what === "create" && which === "developer") {
-    //   result = "For web developement HTML5 and JavaScript. For mobile development, HMTL5, Swift, Java and C#. For games, also HTML5, Python, and C#;
-    // }
-    // if (why === "fun" && what === "create" && which === "scientist") {
-    //   result = "Javascript, Python and Ruby";
-    // }
-    //
-    //
-    // if (why === "fun" && what === "create" && which === "manager") {
-    //   result = "Javascript, Python and Ruby;
-    // }
-    // if (why === "fun" && what === "create" && which === "developer") {
-    //   result = "For web developement HTML5 and JavaScript. For mobile development, HMTL5, Swift, Java and C#. For games, also HTML5, Python, and C#;
-    // }
-    // if (why === "fun" && what === "create" && which === "scientist") {
-    //   result = "Javascript, Python and Ruby";
-    // }
-
-
-
-
-    $("#lang").text(result);
+    $("#lang").text($("#nameInput").val() + "!" + " " + result);
     $("#result").show();
+    $("#userForm").hide();
+
+  });
+
+  $("#nameBtn").click(function() {
+    $("#userName").hide();
+    $("#question1").show();
+  });
+  $("#q1Btn").click(function() {
+    $("#question1").hide();
+    $("#question2").show();
+  });
+  $("#q2Btn").click(function() {
+    $("#question2").hide();
+    $("#question3").show();
   });
 });

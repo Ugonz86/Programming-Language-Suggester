@@ -9,81 +9,89 @@
   </head>
   <body>
     <div class="container">
-      <br>
-      <h1><strong>Programming Language Suggester</strong></h1>
-      <br>
+      <div id="intro">
+        <h1>Looking for the best programming language to learn?</h1>
+        <br>
+        <button type="submit">Get started</button>
+      </div>
+
       <form id="userForm">
-
-        <!-- <div class="form-group" id="userName">
-          <label for="name">Your name: </label>
-          <input type="text" id="name">
+        <br>
+        <h1><strong>Programming Language Suggester</strong></h1>
+        <br>
+        <div class="form-group" id="userName">
+          <label for="name">Submit your name: </label>
+          <input type="text" id="nameInput">
           <br>
-          <button type="submit" name="button">Submit</button>
-        </div> -->
-
-        <div class="form-group" id="question1">
-          <h3>Why do you want to learn Web Programming?</h3>
-          <div class="radio">
-            <label>
-              <input type="radio" name="question1" value="developer">To become a professional Web Developer
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="question1" value="skill">To acquire another skill to my curriculum.
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="question1" value="fun">Just to have fun in my spare time.
-            </label>
-          </div>
-          <!-- <button type="submit" name="button">Submit</button> -->
+          <br>
+          <button type="button" id="nameBtn">Next</button>
         </div>
 
-        <div class="form-group" id="question2">
-          <h3>What areas of web development interest you?</h3>
-          <div class="radio">
-            <label>
-              <input type="radio" name="question2" value="web">Desktop Software and Apps
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="question2" value="games">Games
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="question2" value="data">Data Science
-            </label>
-          </div>
-          <!-- <button type="submit" name="button">Submit</button> -->
-        </div>
 
-        <div class="form-group" id="question3">
-          <h3>In which position do you see yourself after learning programming?</h3>
-          <div class="radio">
-            <label>
-              <input type="radio" name="question3" value="manager">Project Manager
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="question3" value="developer">Designer, Web Developer
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="question3" value="scientist">Data Scientist
-            </label>
-          </div>
+      <div class="form-group" id="question1">
+        <h3>Why do you want to learn Web Programming?</h3>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question1" value="developer">To become a professional Web Developer
+          </label>
         </div>
-        <button type="submit">Submit</button>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question1" value="skill">To acquire another skill to my curriculum.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question1" value="fun">Just to have fun in my spare time.
+          </label>
+        </div>
+        <button type="button" id="q1Btn">Next</button>
+      </div>
+
+      <div class="form-group" id="question2">
+        <h3>What areas of web development interest you?</h3>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question2" value="web">Desktop Software and Apps
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question2" value="games">Games
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question2" value="data">Data Science
+          </label>
+        </div>
+        <button type="button" id="q2Btn">Next</button>
+      </div>
+
+      <div class="form-group" id="question3">
+        <h3>In which position do you see yourself after learning programming?</h3>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question3" value="manager">Project Manager
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question3" value="developer">Designer, Web Developer
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question3" value="scientist">Data Scientist
+          </label>
+        </div>
+        <button type="submit" id="submit">Submit</button>
+      </div>
+      <!-- <button id="submit" type="submit">Submit</button> -->
       </form>
       <br>
       <div id="result">
-        <h2><strong><span id="lang"></span></strong> !</h2>
+        <h2>Hi <strong><span id="lang"></span></strong>!</h2>
       </div>
       <br>
     </div>
