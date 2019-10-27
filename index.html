@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Red+Hat+Display:400,500|Titillium+Web:600&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Programming Language Suggester</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="intro">
+        <h1>Looking for the best programming language to learn?</h1>
+        <button type="submit">Get started</button>
+      </div>
+      <form id="userForm">
+        <h1><strong>Programming Language Suggester</strong></h1>
+        <div class="form-group" id="userName">
+          <label for="name">Submit your name: </label>
+          <input type="text" id="nameInput">
+          <button type="button" id="nameBtn">Next</button>
+        </div>
+        <div class="form-group" id="question1">
+          <h3>Why do you want to learn Programming?</h3>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question1" value="developer">To become a professional Developer
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question1" value="skill">To add another skill in my curriculum.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question1" value="fun">Just to have fun in my spare time.
+            </label>
+          </div>
+          <button type="button" id="q1Btn">Next</button>
+        </div>
+        <div class="form-group" id="question2">
+          <h3>What areas of programming interest you?</h3>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question2" value="web">Web Development
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question2" value="games">Gaming
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question2" value="data">Mobile
+            </label>
+          </div>
+          <button type="button" id="q2Btn">Next</button>
+        </div>
+        <div class="form-group" id="question3">
+          <h3>In which position do you see yourself after learning how to program?</h3>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question3" value="manager">Project Manager
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question3" value="developer">Designer
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question3" value="scientist">Developer
+            </label>
+          </div>
+          <button type="button" id="q3Btn">Next</button>
+        </div>
+
+        <div class="form-group" id="question4">
+          <h3>What are you more interested in?</h3>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question4" value="logic">Logic
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question4" value="ui">User Interface
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question4" value="analytics">Analytics
+            </label>
+          </div>
+          <button type="button" id="q4Btn">Next</button>
+        </div>
+
+        <div class="form-group" id="question5">
+          <h3>Which code do you like the most?</h3>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question5" value="formula1">#####
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question5" value="formula2">#####
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question5" value="formula3">#####
+            </label>
+          </div>
+          <button type="submit" id="q5Btn">Next</button>
+        </div>
+      </form>
+      <div id="result">
+        <h2><strong>Hi <span id="lang"></span></strong>!</h2>
+      </div>
+    </div>
+    <footer>Uriel Gonzalez (C) 2019</footer>
+  </body>
+</html>
