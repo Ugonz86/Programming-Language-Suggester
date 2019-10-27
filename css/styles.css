@@ -1,26 +1,57 @@
 body {
-  background-color: #2e2e2e;
+  background-color: white;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 h1 {
   letter-spacing: 10px;
-  color: #e8e8e8;
+  color: #242424;
   font-weight: bold;
 }
 h2, h3, p {
-  color: #e8e8e8;
+  color: #242424;
 }
 
 button {
-  background-color: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  background-color: #ff9533;
   width: 200px;
   height: 50px;
-  color: #e8e8e8;
+  cursor: pointer;
+  color: #242424;
   font-size: 20px;
-  text-shadow: #e8e8e8 0px 0px 3px ;
   border-radius: 10px;
-  border-color: darkblue;
-  box-shadow: darkblue 1px 2px 3px;
+  box-shadow: grey 1px 2px 3px;
+  border: none;
+  outline: none;
+}
+button:hover {background-color: #f77300}
+
+button:active {
+  background-color: #f77300;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+label {
+    color: black;
+}
+
+footer {
+  background-color: #ff9533;
+  width: 200px;
+  height: 25px;
+  color: #242424;
+  font-size: 15px;
+  border-radius: 10px;
+
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+
+  text-align: center;
 }
 
 .container {
@@ -30,10 +61,11 @@ text-align: center;
 #userForm {
   margin-top: 5%;
   display: none;
+
 }
 
 #userName {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #50b9fa;
   border-radius: 10px;
   height: 250px;
   margin-top: 70px;
@@ -41,11 +73,14 @@ text-align: center;
   padding-bottom: 40px;
   text-align: center;
   font-size: 25px;
+  color: #e8e8e8;
+
 }
 
 #intro {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #50b9fa;
   border-radius: 10px;
+  box-shadow: grey 1px 2px 3px;
   height: 250px;
   margin-top: 150px;
   padding-top: 30px;
@@ -53,11 +88,12 @@ text-align: center;
   padding-left: 10px;
   text-align: center;
   color: #e8e8e8;
+
 }
 
 #result {
   display: none;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #50b9fa;
   border-radius: 10px;
   margin-top: 150px;
   padding-top: 75px;
@@ -66,13 +102,14 @@ text-align: center;
   text-align: center;
   font-size: 25px;
   color: #e8e8e8;
-  box-shadow: darkblue 1px 2px 3px;
+  box-shadow: grey 1px 2px 3px;
 }
 
 #question1, #question2, #question3, #question4, #question5 {
   display: none;
   border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #50b9fa;
+  box-shadow: grey 1px 2px 3px;
   padding-left: 50px;
   margin-top: 70px;
   height: 250px;
