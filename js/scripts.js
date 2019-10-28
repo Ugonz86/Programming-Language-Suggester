@@ -1,5 +1,3 @@
-// var qThree = $("input:radio[name=question1]:checked").val();
-
 $(document).ready(function() {
 
   $("#intro").click(function() {
@@ -21,9 +19,9 @@ $(document).ready(function() {
       result = "Java, Python, Ruby and/or PHP are the most used web languages at a corporate level";
     }
 
-    if (qOne === "developer" && qTwo === "web" && qThree === "manager" && qFour === "logic" && qFive === "formula1") {
-      result = "Java, Python, Ruby and/or PHP are the most used web languages at a corporate level";
-    }
+    // if (qOne === "developer" && qTwo === "web" && qThree === "manager" && qFour === "logic" && qFive === "formula1") {
+    //   result = "Java, Python, Ruby and/or PHP are the most used web languages at a corporate level";
+    // }
 
 
     $("#lang").text($("#nameInput").val() + "!" + " " + result);

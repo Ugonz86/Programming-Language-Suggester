@@ -71,6 +71,8 @@ text-align: center;
   margin-top: 70px;
   padding-top: 95px;
   padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
   text-align: center;
   font-size: 25px;
   color: #e8e8e8;
@@ -85,7 +87,8 @@ text-align: center;
   margin-top: 150px;
   padding-top: 30px;
   padding-bottom: 40px;
-  padding-left: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   text-align: center;
   color: #e8e8e8;
 
@@ -98,6 +101,8 @@ text-align: center;
   margin-top: 150px;
   padding-top: 75px;
   padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
   height: 250px;
   text-align: center;
   font-size: 25px;
@@ -105,7 +110,7 @@ text-align: center;
   box-shadow: grey 1px 2px 3px;
 }
 
-#question1, #question2, #question3, #question4, #question5 {
+#question1, #question2, #question3, #question4 {
   display: none;
   border-radius: 10px;
   background-color: #50b9fa;
@@ -115,6 +120,23 @@ text-align: center;
   height: 250px;
   padding-top: 20px;
   padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #e8e8e8;
+  text-align: left;
+}
+
+#question5 {
+  display: none;
+  border-radius: 10px;
+  background-color: #50b9fa;
+  box-shadow: grey 1px 2px 3px;
+  padding-left: 50px;
+  margin-top: 70px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
   color: #e8e8e8;
   text-align: left;
 }
