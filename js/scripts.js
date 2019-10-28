@@ -19,15 +19,12 @@ $(document).ready(function() {
       result = "Java, Python, Ruby and/or PHP are the most used web languages at a corporate level";
     }
 
-    // if (qOne === "developer" && qTwo === "web" && qThree === "manager" && qFour === "logic" && qFive === "formula1") {
-    //   result = "Java, Python, Ruby and/or PHP are the most used web languages at a corporate level";
-    // }
+    //all if's results in progress atm.
 
 
     $("#lang").text($("#nameInput").val() + "!" + " " + result);
     $("#result").fadeIn("slow");
     $("#userForm").hide("fadeOut");
-
   });
 
   $("#nameBtn").click(function() {
