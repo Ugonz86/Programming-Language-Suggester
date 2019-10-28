@@ -15,8 +15,41 @@ $(document).ready(function() {
     var qFive = $("input:radio[name=question5]:checked").val();
 
     var result = "";
+    //all if's results in progress atm.
     if (qOne === "developer" && qTwo === "web" && qThree === "manager" && qFour === "logic" && qFive === "formula1") {
-      result = "Java, Python, Ruby and/or PHP are the most used web languages at a corporate level";
+      result = "Java, Python, Ruby and/or PHP are the most used web languages at a corporate level"; //This result will be changed shortly.
+    }
+
+    if (qOne === "developer" && qTwo === "web" && qThree === "manager" && qFour === "logic" && qFive === "formula2") {
+      result = "Java, Python, Ruby and/or PHP are the most used web languages at a corporate level"; //This result will be changed shortly.
+    }
+
+    if (qOne === "developer" && qTwo === "web" && qThree === "manager" && qFour === "logic" && qFive === "formula3") {
+      result = "Java, Python, Ruby and/or PHP are the most used web languages at a corporate level"; //This result will be changed shortly.
+    }
+
+    if (qOne === "skill" && qTwo === "web" && qThree === "manager" && qFour === "logic" && qFive === "formula1") {
+      result = "Java, Python, Ruby and/or PHP are the most used web languages at a corporate level"; //This result will be changed shortly.
+    }
+
+    if (qOne === "skill" && qTwo === "web" && qThree === "manager" && qFour === "logic" && qFive === "formula2") {
+      result = "Java, Python, Ruby and/or PHP are the most used web languages at a corporate level"; //This result will be changed shortly.
+    }
+
+    if (qOne === "skill" && qTwo === "web" && qThree === "manager" && qFour === "logic" && qFive === "formula3") {
+      result = "Java, Python, Ruby and/or PHP are the most used web languages at a corporate level"; //This result will be changed shortly.
+    }
+
+    if (qOne === "fun" && qTwo === "web" && qThree === "manager" && qFour === "logic" && qFive === "formula1") {
+      result = "Java, Python, Ruby and/or PHP are the most used web languages at a corporate level"; //This result will be changed shortly.
+    }
+
+    if (qOne === "fun" && qTwo === "web" && qThree === "manager" && qFour === "logic" && qFive === "formula2") {
+      result = "Java, Python, Ruby and/or PHP are the most used web languages at a corporate level"; //This result will be changed shortly.
+    }
+
+    if (qOne === "fun" && qTwo === "web" && qThree === "manager" && qFour === "logic" && qFive === "formula3") {
+      result = "Java, Python, Ruby and/or PHP are the most used web languages at a corporate level"; //This result will be changed shortly.
     }
 
     //all if's results in progress atm.
