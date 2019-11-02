@@ -5,79 +5,79 @@ $(document).ready(function() {
   $("#userForm").fadeIn("slow");
   });
 
-  $("form#userForm").submit(function(event) {
-    event.preventDefault();
+  $("#nameBtn").click(function() { //This saves the user name as user input.
+     $("#userName").hide("fadeOut");
+     $("#question1").fadeIn("slow");
+   });
 
-    var qOne = $("input:radio[name=question1]:checked").val();
-    var qTwo = $("input:radio[name=question2]:checked").val();
-    var qThree = $("input:radio[name=question3]:checked").val();
-    var qFour = $("input:radio[name=question4]:checked").val();
-    var qFive = $("input:radio[name=question5]:checked").val();
+   $("#question1Button").click(function() { //Branching starts here:
+     event.preventDefault();
+     var questionOne = $("input:radio[name=question1]:checked").val();
 
-    var result = "";
-    //all if's results in progress atm.
-    if (qOne === "developer" && qTwo === "web" && qThree === "manager" && qFour === "logic" && qFive === "formula1") {
-      result = "Java, Python, Ruby and/or PHP are the most used web languages at a corporate level"; //This result will be changed shortly.
-    }
+     if (questionOne === "developer") {
+       $("#question1").hide("fadeOut");
+       $("#question2").fadeIn("slow");
 
-    if (qOne === "developer" && qTwo === "web" && qThree === "manager" && qFour === "logic" && qFive === "formula2") {
-      result = "Java, Python, Ruby and/or PHP are the most used web languages at a corporate level"; //This result will be changed shortly.
-    }
+       $("#question2Button").click(function() {
+         var questionTwo = $("input:radio[name=question2]:checked").val();
+          if (questionTwo === "web") {
+            $("#question2").hide("fadeOut");
+            $("#result").fadeIn("slow");
+            result = "The first programming languages you should learn are HTML5 and JavaScript";
+            $("#lang").text($("#nameInput").val() + "!" + " " + result);
+          }
+          else if (questionTwo === "games") {
+            $("#question2").hide("fadeOut");
+            $("#result").fadeIn("slow");
+            result = "C# is often the recommended language to use when making games";
+            $("#lang").text($("#nameInput").val() + "!" + " " + result);
+          }
+          else if (questionTwo === "mobile") {
+            $("#question2").hide("fadeOut");
+            $("#result").fadeIn("slow");
+            result = "Swift for iOS, C# for Windows and Java for Android are the first languages you should learn for mobile development";
+            $("#lang").text($("#nameInput").val() + "!" + " " + result);
+          } else {
+            alert ("Please select an answer!");
+          }
+        });
 
-    if (qOne === "developer" && qTwo === "web" && qThree === "manager" && qFour === "logic" && qFive === "formula3") {
-      result = "Java, Python, Ruby and/or PHP are the most used web languages at a corporate level"; //This result will be changed shortly.
-    }
+     } else if (questionOne === "skill") {
+       $("#question1").hide("fadeOut");
+       $("#question3").fadeIn("slow");
 
-    if (qOne === "skill" && qTwo === "web" && qThree === "manager" && qFour === "logic" && qFive === "formula1") {
-      result = "Java, Python, Ruby and/or PHP are the most used web languages at a corporate level"; //This result will be changed shortly.
-    }
+       $("#question3Button").click(function() {
+        var questionThree = $("input:radio[name=question3]:checked").val();
 
-    if (qOne === "skill" && qTwo === "web" && qThree === "manager" && qFour === "logic" && qFive === "formula2") {
-      result = "Java, Python, Ruby and/or PHP are the most used web languages at a corporate level"; //This result will be changed shortly.
-    }
-
-    if (qOne === "skill" && qTwo === "web" && qThree === "manager" && qFour === "logic" && qFive === "formula3") {
-      result = "Java, Python, Ruby and/or PHP are the most used web languages at a corporate level"; //This result will be changed shortly.
-    }
-
-    if (qOne === "fun" && qTwo === "web" && qThree === "manager" && qFour === "logic" && qFive === "formula1") {
-      result = "Java, Python, Ruby and/or PHP are the most used web languages at a corporate level"; //This result will be changed shortly.
-    }
-
-    if (qOne === "fun" && qTwo === "web" && qThree === "manager" && qFour === "logic" && qFive === "formula2") {
-      result = "Java, Python, Ruby and/or PHP are the most used web languages at a corporate level"; //This result will be changed shortly.
-    }
-
-    if (qOne === "fun" && qTwo === "web" && qThree === "manager" && qFour === "logic" && qFive === "formula3") {
-      result = "Java, Python, Ruby and/or PHP are the most used web languages at a corporate level"; //This result will be changed shortly.
-    }
-
-    //all if's results in progress atm.
-
-
-    $("#lang").text($("#nameInput").val() + "!" + " " + result);
-    $("#result").fadeIn("slow");
-    $("#userForm").hide("fadeOut");
-  });
-
-  $("#nameBtn").click(function() {
-    $("#userName").hide("fadeOut");
-    $("#question1").fadeIn("slow");
-  });
-  $("#q1Btn").click(function() {
-    $("#question1").hide("fadeOut");
-    $("#question2").fadeIn("slow");
-  });
-  $("#q2Btn").click(function() {
-    $("#question2").hide("fadeOut");
-    $("#question3").fadeIn("slow");
-  });
-  $("#q3Btn").click(function() {
-    $("#question3").hide("fadeOut");
-    $("#question4").fadeIn("slow");
-  });
-  $("#q4Btn").click(function() {
-    $("#question4").hide("fadeOut");
-    $("#question5").fadeIn("slow");
-  });
+       if (questionThree === "manager") {
+         $("#question3").hide("fadeOut");
+         $("#result").fadeIn("slow");
+         result = "PHP is the first language you should learn";
+         $("#lang").text($("#nameInput").val() + "!" + " " + result);
+       }
+       else if (questionThree === "developer") {
+         $("#question3").hide("fadeOut");
+         $("#result").fadeIn("slow");
+         result = "HTML5 is the first language you should learn along with JavaScript";
+         $("#lang").text($("#nameInput").val() + "!" + " " + result);
+       }
+       else if (questionThree === "scientist") {
+         $("#question3").hide("fadeOut");
+         $("#result").fadeIn("slow");
+         result = "For anyone interested in research and big data analysis, Python can be a powerful language to start with";
+         $("#lang").text($("#nameInput").val() + "!" + " " + result);
+       } else {
+         alert ("Please select an answer!");
+       }
+     });
+     } else if (questionOne === "fun") {
+       $("#question1").hide("fadeOut");
+       $("#result").fadeIn("slow");
+       result = "Besides online learning, you should checkout a local workshop or meetup to explore development in a casual, fun setting!";
+       $("#lang").text($("#nameInput").val() + "!" + " " + result);
+     } else {
+       alert ("Please select an answer!");
+     }
+     //More questions will be added shortly.
+   });
 });
